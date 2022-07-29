@@ -1,0 +1,17 @@
+<?php
+
+/*
+	Description : This controller is used for user crud operations.
+	Author      : Venkat Reddy Muthuru
+	Date        : May-15-2015
+*/
+
+class WelcomeController extends BaseController {
+	public function index()
+	{
+            parent::Breadcrumbs(array('Home'=>'#')); 
+            return View::make('welcome.hello');
+	}
+
+}
+?>
